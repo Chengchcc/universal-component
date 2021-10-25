@@ -1,0 +1,6 @@
+{
+    "universal-btn": "./src/components/universal-btn/index.ts",
+    "universal-table": "./src/components/universal-table/index.ts",
+    "ellipsis": "./src/components/ellipsis/index.ts",
+    "universal-form": "./src/components/universal-form/index.ts"
+}

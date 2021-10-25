@@ -1,0 +1,133 @@
+.ant-table-column-sorters--custom {
+    &:before {
+        content: unset !important;
+    }
+}
+.right-panel {
+    display: flex;
+    justify-content: flex-end;
+}
+.table-header {
+    padding-right: 40px;
+    margin-bottom: 8px;
+    position: relative;
+    .table-header--panel {
+        width: 100%;
+        overflow: hidden;
+    }
+    .table-header--extra {
+        position: absolute;
+        right: 0;
+        bottom: 6px;
+    }
+}
+
+.status-tag {
+    &:before {
+        content: "";
+        display: inline-block;
+        margin-right: 0.3rem;
+        width: 0.4rem;
+        height: 0.4rem;
+        position: relative;
+        border-radius: 50%;
+        background-color: var(--color);
+    }
+}
+::v-deep .ant-table-thead > tr > th {
+    background: #f7f7fb;
+}
+::v-deep .ant-table {
+    .ant-table-thead
+        > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+        > td,
+    .ant-table-tbody
+        > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+        > td,
+    .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+    .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+        background: #f7f7fb;
+    }
+}
+
+::v-deep .ant-table {
+    .resize-table-th {
+        position: relative;
+        .table-draggable-handle {
+            height: unset !important;
+            transform: unset !important;
+            cursor: col-resize;
+            touch-action: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 10px !important;
+            right: 0px;
+        }
+    }
+    &:not(.ant-table-bordered) {
+        .ant-table-fixed-left .resize-table-th,
+        .ant-table-fixed-right .resize-table-th:not(:last-of-type),
+        .ant-table-scroll .resize-table-th:not(:last-of-type) {
+            .table-draggable-handle {
+                &:after {
+                    position: absolute;
+                    content: "";
+                    width: 2px;
+                    right: 0;
+                    height: 24px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: #0000000f;
+                }
+            }
+        }
+    }
+    .ant-dropdown-trigger {
+        @include flex-center();
+    }
+}
+
+::v-deep .ant-table-pagination {
+    display: none;
+}
+.table-footer {
+    margin: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ant-table-column-custom {
+    .ant-table-column-sorter-inner {
+        @include flex-center;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 0 !important;
+        height: 100% !important;
+        width: 28px;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #e5e5e5;
+            opacity: 0;
+        }
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}
+.ant-table-column-custom.ant-table-column-has-filters {
+    .ant-table-column-sorter-inner {
+        right: 28px;
+    }
+}

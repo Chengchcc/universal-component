@@ -1,0 +1,82 @@
+{
+    "code": 0,
+    "msg": "请求成功",
+    "data": {
+        "list": [
+            {
+                "id": 6,
+                "title": "JGPH-2",
+                "department": "暗",
+                "source": "幽",
+                "business_ids": [
+                    2
+                ],
+                "status": 1,
+                "create_time": 1630376473276,
+                "finish_time": 0
+            },
+            {
+                "id": 5,
+                "title": "JGPH-1",
+                "department": "网监局",
+                "source": "暗访",
+                "business_ids": [
+                    3
+                ],
+                "status": 2,
+                "create_time": 1630314905137,
+                "finish_time": 1630315226526
+            },
+            {
+                "id": 4,
+                "title": "监管配合-2",
+                "department": "HR\u0026行政",
+                "source": "天坛",
+                "business_ids": [
+                    1,
+                    2
+                ],
+                "status": 1,
+                "create_time": 1629704969344,
+                "finish_time": 0
+            },
+            {
+                "id": 3,
+                "title": "监管配合-1",
+                "department": "部门xxx",
+                "source": "电子眼+",
+                "business_ids": [
+                    3
+                ],
+                "status": 0,
+                "create_time": 1629704679317,
+                "finish_time": 0
+            },
+            {
+                "id": 2,
+                "title": "测试监管配合12",
+                "department": "部门12",
+                "source": "渠道1",
+                "business_ids": [
+                    1
+                ],
+                "status": 2,
+                "create_time": 1629085811612,
+                "finish_time": 1629085912544
+            },
+            {
+                "id": 1,
+                "title": "监管配合816-1049-2",
+                "department": "部门1",
+                "source": "渠道1",
+                "business_ids": [
+                    1
+                ],
+                "status": 2,
+                "create_time": 1629082157366,
+                "finish_time": 1629082227944
+            }
+        ],
+        "total": 6
+    }
+}

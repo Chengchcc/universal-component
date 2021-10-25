@@ -1,0 +1,39 @@
+// 导出得全局样式
+@import './mixins/index.scss';
+@import './transtion.scss';
+
+@mixin block-white($height, $bottom: 20px) {
+    width: 100%;
+    height: $height;
+    background: $color-white;
+    margin-bottom: $bottom;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin badge-red {
+    display: inline-block;
+    color: white;
+    background-color: $badge-red;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+@mixin ellipsis {
+    overflow: hidden; //隐藏文字
+    text-overflow: ellipsis; //显示 ...
+    white-space: nowrap; //不换行
+}
+
+.nowrap {
+    @include ellipsis();
+}

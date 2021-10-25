@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.ttf?t=1568194746165') format('truetype'),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-right:before {
+  content: "\e602";
+}

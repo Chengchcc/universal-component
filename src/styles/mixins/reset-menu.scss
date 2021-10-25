@@ -1,0 +1,25 @@
+@mixin reset-menu {
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    span {
+      color: rgba(255, 255, 255, 1);
+    }
+    i {
+      color: white;
+    }
+  }
+  &.is-active {
+    background-color: #409eff;
+    span {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  span {
+    color: rgba(255, 255, 255, 0.75);
+    padding-left: 8px;
+  }
+  i {
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
